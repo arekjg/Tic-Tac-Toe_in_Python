@@ -1,6 +1,6 @@
 # Tic Tac Toe
 
-Simple Tic Tac Toe game written in Python ath the beginning of my Python learning process.  
+Simple Tic Tac Toe game written in Python at the beginning of my Python learning process.  
 Made in accordance with Bro Code's tutorials: [LINK](https://www.youtube.com/c/BroCodez "Bro Code on YT")
 
 ### Screenshots

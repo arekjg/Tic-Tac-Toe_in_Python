@@ -9,7 +9,7 @@ def next_turn(row, column):
             buttons[row][column]["text"] = player
             if check_winner() is False:
                 player = players[1]
-                label.config(text=(players[1]+" turn"))
+                label.config(text=(players[1]+"'s turn"))
             elif check_winner() is True:
                 label.config(text=(players[0]+" wins"))
             elif check_winner() == "Tie":
@@ -18,7 +18,7 @@ def next_turn(row, column):
             buttons[row][column]["text"] = player
             if check_winner() is False:
                 player = players[0]
-                label.config(text=(players[0]+" turn"))
+                label.config(text=(players[0]+"'s turn"))
             elif check_winner() is True:
                 label.config(text=(players[1]+" wins"))
             elif check_winner() == "Tie":
@@ -69,7 +69,7 @@ def empty_spaces():
 def new_game():
     global player
     player = random.choice(players)
-    label.config(text=player + " turn")
+    label.config(text=player + "'s turn")
     for row in range(3):
         for column in range (3):
             buttons[row][column].config(text="", bg="#F0F0F0")
@@ -83,7 +83,7 @@ buttons =  [[0,0,0],
             [0,0,0],
             [0,0,0]]
 
-label = Label(text=player + " turn", font=("Consolas",40))
+label = Label(text=player + "'s turn", font=("Consolas",40))
 label.pack(side="top")
 
 reset_button = Button(text="restart", font=("Consolas",20), command=new_game)
